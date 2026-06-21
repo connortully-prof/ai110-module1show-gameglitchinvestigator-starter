@@ -4,21 +4,30 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 ## 1. What was broken when you started?
 
-- What did the game look like the first time you ran it?
+- What did the game look like the first time you ran it? 
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
+
+  The core component of the game works as you can guess the secret number. However, there are numerous bugs as well as a phew things that dont make sense. The new game button siply doesnt work and the count for the amount of hints you have is off. Changing the difficulty also doesnt work if you have already lost a game.
 
 **Bug Reproduction Log**
 
 Document at least 3 bugs you found. Add rows as needed.
 
-| Input | Expected Behavior | Actual Behavior | Console Output / Error |
-|-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+ Input                 | Clicking Submit Guess                  | Clicking New Game                      | 6
+-----------------------|----------------------------------------|----------------------------------------|-----------------------------------------------|
+Expected Behavior      | Giving the right amount of attempt     | Clicking new game should create a      | When the guess is higher the hint should be   |
+                       |                                        | new game and clear the previous guesses| lower and vise versa                          |
+-----------------------|----------------------------------------|----------------------------------------|-----------------------------------------------|
+Actual Behavior        | Told me the answer and said I ran out  | Clicking new game does nothing         | When the guess is too high, the hint is too   |
+                       | of attempts when I still had 1 left    |                                        | low which is the opposite of what is          |
+-----------------------|----------------------------------------|----------------------------------------|-----------------------------------------------|
+Console Output / Error | Out of attempts! The secret was 92.    |                                        | Go LOWER!
+                       | Score: -35                             |                                        |
+-----------------------|----------------------------------------|----------------------------------------|-----------------------------------------------|
 
----
+------
 
 ## 2. How did you use AI as a teammate?
 
