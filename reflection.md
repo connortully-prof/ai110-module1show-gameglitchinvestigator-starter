@@ -14,26 +14,18 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 Document at least 3 bugs you found. Add rows as needed.
 
-| Input | Expected Behavior | Actual Behavior | Console Output / Error |
-|-------|-------------------|-----------------|------------------------|
-| | | | | Giving the right  | Told me the answ|
-| | | | | amount of attempts| er and said I ra|
-| | | | |                   | n out of attemps|
-                            | when I still had|
-                            | one left        |
--------------------------------------------------------------------------
-        | Clicking New Game | Clicking new gam|
-        | should create a ne| e does nothing  |
-        | w game and clear t|
-        | he previous guesse|
-        | s 
--------------------------------------------------------------------------
-        | When the guess is | When the guess is too high the hint is to
-        | higher the hint sh|
-        | ould be lower and |
-        | when the guess is |
-        | lower the hint sho|
-        | uld be higher
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+ Input                 | Clicking Submit Guess                  | Clicking New Game                      | 6
+-----------------------|----------------------------------------|----------------------------------------|-----------------------------------------------|
+Expected Behavior      | Giving the right amount of attempt     | Clicking new game should create a      | When the guess is higher the hint should be   |
+                       |                                        | new game and clear the previous guesses| lower and vise versa                          |
+-----------------------|----------------------------------------|----------------------------------------|-----------------------------------------------|
+Actual Behavior        | Told me the answer and said I ran out  | Clicking new game does nothing         | When the guess is too high, the hint is too   |
+                       | of attempts when I still had 1 left    |                                        | low which is the opposite of what is          |
+-----------------------|----------------------------------------|----------------------------------------|-----------------------------------------------|
+Console Output / Error | Out of attempts! The secret was 92.    |                                        | Go LOWER!
+                       | Score: -35                             |                                        |
+-----------------------|----------------------------------------|----------------------------------------|-----------------------------------------------|
 
 ------
 
