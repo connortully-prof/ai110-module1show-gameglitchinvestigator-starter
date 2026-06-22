@@ -43,7 +43,7 @@ Document at least 3 bugs you found. Add rows as needed.
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
 
-The AI that I am using is whatever is built into VScode. 
+The AI that I am using is whatever is built into VScode. A correct suggestion the AI made was to update the hint code in check_guess() so that Too high would return Go lower and vise versa. A misleading example of the AI making a suggestion was when I asked it to help fix how the guess button worked. It did help fix the button however it went out of its way to change the layout too.
 
 ---
 
@@ -54,12 +54,14 @@ The AI that I am using is whatever is built into VScode.
   and what it showed you about your code.
 - Did AI help you design or understand any tests? How?
 
+I decided that the bugs were fixed when I tested the game and the behavior was acceptable to me. I manually tested everything by playing the game and changing what I was currently working on. AI didnt help me understand the tests because I knew what I was looking for and was the one making sure the AI was doing everything right.
 ---
 
 ## 4. What did you learn about Streamlit and state?
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
+I would explain that the game reruns the code for every interaction but that the current games session state keeps the values like the secret and amount of guesses. Every session state key is initialized and recorded before any changes are made and the game reruns. 
 ---
 
 ## 5. Looking ahead: your developer habits
@@ -68,3 +70,5 @@ The AI that I am using is whatever is built into VScode.
   - This could be a testing habit, a prompting strategy, or a way you used Git.
 - What is one thing you would do differently next time you work with AI on a coding task?
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+One strategy I deploy for my projects is focusing on one aspect I want to fix and then commit after fixing or changing whatever I was working on. Next time maybe I should clarify to the AI what I dont want changed so that it doesnt accidently change something unrelated like the layout again. I had previously known that AI could be used to help code but I think I was underestimating it. Now when I use AI i think im going to be more strategic with how I give it commands.
