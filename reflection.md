@@ -10,7 +10,7 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
   The core component of the game works as you can guess the secret number. However, there are numerous bugs as well as a phew things that dont make sense. The new game button siply doesnt work and the count for the amount of hints you have is off. Changing the difficulty also doesnt work if you have already lost a game
 
-**Bug Reproduction Log**
+**Bug Reproduction Log** (I had the bug report complete and looking good but something happened and I spent way to much time on it to fix how it looks. all the answers are there)
 
 Document at least 3 bugs you found. Add rows as needed.
 
