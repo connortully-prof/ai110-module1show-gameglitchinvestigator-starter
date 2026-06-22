@@ -108,9 +108,11 @@ if st.session_state.reset_guess_input:
 
 st.subheader("Make a guess")
 
+current_guess_number = min(st.session_state.attempts + 1, attempt_limit)
+
 st.info(
     f"Guess a number between 1 and 100. "
-    f"Attempts left: {attempt_limit - st.session_state.attempts}"
+    f"Guess {current_guess_number} of {attempt_limit}."
 )
 
 with st.expander("Developer Debug Info"):
@@ -151,14 +153,13 @@ if st.session_state.status != "playing":
     st.stop()
 
 if submit:
-    st.session_state.attempts += 1
-
     ok, guess_int, err = parse_guess(raw_guess)
 
     if not ok:
         st.session_state.history.append(raw_guess)
         st.error(err)
     else:
+        st.session_state.attempts += 1
         st.session_state.history.append(guess_int)
 
         if st.session_state.attempts % 2 == 0:
