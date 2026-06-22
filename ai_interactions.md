@@ -4,73 +4,51 @@
 
 ---
 
+## Core Project Summary
+
+**AI Tool Used**: GitHub Copilot (built into VS Code)
+
+**Core Bugs Fixed**:
+1. Reversed hints in `check_guess()` — swapped "Go HIGHER" and "Go LOWER" logic
+2. Broken New Game button — added full state reset and input clearing
+3. Off-by-one guess counter — moved increment inside valid-guess branch and adjusted display to "Guess X of Y"
+4. Double-click submit issue — wrapped input in a Streamlit form for single-click registration
+5. Weak input validation — tightened `parse_guess()` to enforce range and numeric-only constraints
+6. Hard mode range — updated from 1–50 to 1–500
+
+**AI's Role**: Copilot helped identify logic inversions and provided suggestions on Streamlit session state management and form handling. Most fixes required manual debugging and verification by testing edge cases and user interactions.
+
+**Challenges Encountered**:
+- Initially applied layout changes that broke the page UI; reverted to keep original layout with only functional changes.
+- Required multiple attempts to get session state reset working correctly without triggering Streamlit widget modification errors.
+- Input validation needed refinement to handle negative numbers and out-of-range guesses consistently.
+
+---
+
+## Stretch Features
+
+No stretch features were attempted. The focus was on completing and fixing all core game functionality.
+
+---
+
 ## Agent Workflow (SF8)
 
-> Document your experience using an AI agent (e.g., Cursor Agent, Claude, Copilot) to make multi-step changes autonomously.
-
-**What task did you give the agent?**
-
-<!-- Describe the goal you asked the agent to accomplish -->
-
-**What did the agent do?**
-
-<!-- List the steps the agent took (files edited, commands run, etc.) -->
-
-**What did you have to verify or fix manually?**
-
-<!-- Describe anything the agent got wrong or that required human review -->
+Not attempted.
 
 ---
 
 ## Test Generation (SF7)
 
-> Document how you used AI to help generate or improve tests.
-
-| Edge Case | Prompt Used | AI-Suggested Test | Did It Pass? | Your Reasoning |
-|-----------|-------------|-------------------|--------------|----------------|
-| | | | | |
-| | | | | |
-| | | | | |
+Not attempted. Tests remain unrefactored (logic functions are still in `app.py` rather than `logic_utils.py`).
 
 ---
 
 ## Linting & Style (SF9)
 
-> Document your use of AI for linting or code style improvements.
-
-**Prompt used:**
-
-```
-<!-- Paste the prompt you gave the AI -->
-```
-
-**Linting output before:**
-
-```
-<!-- Paste relevant linter warnings/errors -->
-```
-
-**Changes applied:**
-
-<!-- Describe what you changed based on the AI's suggestions -->
+Not attempted.
 
 ---
 
 ## Model Comparison (SF11)
 
-> Compare two AI models on the same task.
-
-**Task given to both models:**
-
-<!-- Describe what you asked each model to do -->
-
-| | Model A | Model B |
-|-|---------|---------|
-| **Model name** | | |
-| **Response summary** | | |
-| **More Pythonic?** | | |
-| **Clearer explanation?** | | |
-
-**Which did you prefer and why?**
-
-<!-- Your conclusion -->
+Not attempted.
