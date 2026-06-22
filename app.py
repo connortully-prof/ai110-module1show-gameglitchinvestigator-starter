@@ -7,7 +7,7 @@ def get_range_for_difficulty(difficulty: str):
     if difficulty == "Normal":
         return 1, 100
     if difficulty == "Hard":
-        return 1, 50
+        return 1, 500
     return 1, 100
 
 
@@ -111,7 +111,7 @@ st.subheader("Make a guess")
 current_guess_number = min(st.session_state.attempts + 1, attempt_limit)
 
 st.info(
-    f"Guess a number between 1 and 100. "
+    f"Guess a number between {low} and {high}. "
     f"Guess {current_guess_number} of {attempt_limit}."
 )
 
